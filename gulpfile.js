@@ -6,6 +6,7 @@ const sass = require('gulp-dart-sass');
 const replace = require('gulp-replace');
 const ts = require('gulp-typescript');
 const rimraf = require('rimraf');
+const concat = require('gulp-concat');
 
 const BUILD_DIR = path.resolve('build');
 
@@ -68,6 +69,12 @@ task('styles-components', () => {
         .pipe(dest(path.resolve(BUILD_DIR, 'cjs', 'components')));
 });
 
+task('styles-bundle', () => {
+    return src(['styles/styles.css', 'styles/fonts.css', 'build/esm/components/**/*.css'])
+        .pipe(concat('bundle.css'))
+        .pipe(dest('styles'));
+});
+
 task(
     'build',
     series([
@@ -75,6 +82,7 @@ task(
         parallel(['compile-to-esm', 'compile-to-cjs']),
         'copy-i18n',
         parallel(['styles-global', 'styles-components']),
+        'styles-bundle'
     ]),
 );
 

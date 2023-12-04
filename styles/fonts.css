@@ -1,1 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+body.g-root:not(.g-root_mobile):not(.g-root_native-scrollbar) *::-webkit-scrollbar-thumb:hover {
+  background: var(--g-color-scroll-handle-hover);
+}
