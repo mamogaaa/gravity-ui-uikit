@@ -1,0 +1,44 @@
+.yc-spin {
+  display: inline-block;
+  backface-visibility: hidden;
+  animation: yc-spin 1s linear infinite;
+}
+.yc-spin__inner {
+  box-sizing: border-box;
+  height: 100%;
+  width: 50%;
+  margin-left: 50%;
+  border: 2px solid var(--g-color-line-brand);
+  border-left: none;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.yc-spin_size_xs {
+  width: 16px;
+  height: 16px;
+}
+.yc-spin_size_s {
+  width: 24px;
+  height: 24px;
+}
+.yc-spin_size_m {
+  width: 28px;
+  height: 28px;
+}
+.yc-spin_size_l {
+  width: 32px;
+  height: 32px;
+}
+.yc-spin_size_xl {
+  width: 36px;
+  height: 36px;
+}
+
+@keyframes yc-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

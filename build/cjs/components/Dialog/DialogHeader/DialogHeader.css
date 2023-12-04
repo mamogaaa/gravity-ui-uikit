@@ -1,0 +1,13 @@
+.yc-dialog-header {
+  padding: var(--yc-dialog-header-padding);
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--g-color-text-primary);
+}
+.yc-dialog-header__caption {
+  font-size: var(--g-text-subheader-3-font-size);
+  line-height: var(--g-text-subheader-3-line-height);
+  font-weight: var(--g-text-subheader-font-weight);
+}

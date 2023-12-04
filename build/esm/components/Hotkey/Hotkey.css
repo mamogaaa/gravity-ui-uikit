@@ -1,0 +1,24 @@
+.yc-hotkey {
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+.yc-hotkey,
+.yc-hotkey kbd {
+  font-size: var(--g-text-body-1-font-size);
+  line-height: var(--g-text-body-1-line-height);
+  font-weight: var(--g-text-body-font-weight);
+  font-family: var(--g-font-family-sans);
+}
+.yc-hotkey_view_light {
+  background-color: var(--g-color-base-generic);
+}
+.yc-hotkey_view_light .yc-hotkey__plus {
+  color: var(--g-color-text-hint);
+}
+.yc-hotkey_view_dark {
+  color: var(--g-color-text-light-complementary);
+  background-color: var(--g-color-base-light-simple-hover);
+}
+.yc-hotkey_view_dark .yc-hotkey__plus {
+  color: var(--g-color-text-light-hint);
+}

@@ -1,0 +1,96 @@
+.yc-color-text_color_primary {
+  color: var(--g-color-text-primary);
+}
+.yc-color-text_color_complementary {
+  color: var(--g-color-text-complementary);
+}
+.yc-color-text_color_secondary {
+  color: var(--g-color-text-secondary);
+}
+.yc-color-text_color_hint {
+  color: var(--g-color-text-hint);
+}
+.yc-color-text_color_info {
+  color: var(--g-color-text-info);
+}
+.yc-color-text_color_info-heavy {
+  color: var(--g-color-text-info-heavy);
+}
+.yc-color-text_color_positive {
+  color: var(--g-color-text-positive);
+}
+.yc-color-text_color_positive-heavy {
+  color: var(--g-color-text-positive-heavy);
+}
+.yc-color-text_color_warning {
+  color: var(--g-color-text-warning);
+}
+.yc-color-text_color_warning-heavy {
+  color: var(--g-color-text-warning-heavy);
+}
+.yc-color-text_color_danger {
+  color: var(--g-color-text-danger);
+}
+.yc-color-text_color_danger-heavy {
+  color: var(--g-color-text-danger-heavy);
+}
+.yc-color-text_color_utility {
+  color: var(--g-color-text-utility);
+}
+.yc-color-text_color_utility-heavy {
+  color: var(--g-color-text-utility-heavy);
+}
+.yc-color-text_color_misc {
+  color: var(--g-color-text-misc);
+}
+.yc-color-text_color_misc-heavy {
+  color: var(--g-color-text-misc-heavy);
+}
+.yc-color-text_color_brand {
+  color: var(--g-color-text-brand);
+}
+.yc-color-text_color_link {
+  color: var(--g-color-text-link);
+}
+.yc-color-text_color_link-hover {
+  color: var(--g-color-text-link-hover);
+}
+.yc-color-text_color_link-visited {
+  color: var(--g-color-text-link-visited);
+}
+.yc-color-text_color_link-visited-hover {
+  color: var(--g-color-text-link-visited-hover);
+}
+.yc-color-text_color_dark-primary {
+  color: var(--g-color-text-dark-primary);
+}
+.yc-color-text_color_dark-complementary {
+  color: var(--g-color-text-dark-complementary);
+}
+.yc-color-text_color_dark-secondary {
+  color: var(--g-color-text-dark-secondary);
+}
+.yc-color-text_color_light-primary {
+  color: var(--g-color-text-light-primary);
+}
+.yc-color-text_color_light-complementary {
+  color: var(--g-color-text-light-complementary);
+}
+.yc-color-text_color_light-secondary {
+  color: var(--g-color-text-light-secondary);
+}
+.yc-color-text_color_light-hint {
+  color: var(--g-color-text-light-hint);
+}
+.yc-color-text_color_inverted-primary {
+  color: var(--g-color-text-inverted-primary);
+}
+.yc-color-text_color_inverted-complementary {
+  color: var(--g-color-text-inverted-complementary);
+}
+.yc-color-text_color_inverted-secondary {
+  color: var(--g-color-text-inverted-secondary);
+}
+.yc-color-text_color_inverted-hint {
+  color: var(--g-color-text-inverted-hint);
+}

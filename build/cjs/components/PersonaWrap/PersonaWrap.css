@@ -1,0 +1,148 @@
+.yc-persona {
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  border-radius: 20px;
+  transition-property: background-color;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+.yc-persona_theme_default:after {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  border: 1px solid var(--g-color-line-generic);
+  border-radius: 20px;
+  transition-property: border-color;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+.yc-persona_empty.yc-persona_size_s {
+  padding-left: 12px;
+}
+.yc-persona_empty.yc-persona_size_n {
+  padding-left: 16px;
+}
+.yc-persona_clickable:hover {
+  cursor: pointer;
+  background-color: var(--g-color-base-simple-hover);
+}
+.yc-persona_clickable:hover:after {
+  border-color: transparent;
+}
+.yc-persona__main {
+  margin: 0;
+  padding: 0;
+  font-family: var(--g-text-body-font-family);
+  font-size: inherit;
+  font-weight: var(--g-text-body-font-weight);
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  padding-right: 6px;
+  border-radius: inherit;
+}
+.yc-persona_closeable .yc-persona__main {
+  padding-right: 0;
+}
+.yc-persona_clickable .yc-persona__main {
+  outline-offset: -1px;
+}
+.yc-persona_clickable .yc-persona__main:focus {
+  outline: 2px solid var(--g-color-line-focus);
+}
+.yc-persona_clickable .yc-persona__main:focus:not(:focus-visible) {
+  outline: 0;
+}
+.yc-persona__avatar {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  justify-content: center;
+  background-color: var(--g-color-base-generic-accent);
+  transition-property: background-color;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+.yc-persona_size_n .yc-persona__avatar {
+  margin-right: 12px;
+}
+.yc-persona_size_s .yc-persona__avatar {
+  margin-right: 6px;
+}
+.yc-persona_clickable:hover .yc-persona__avatar {
+  background-color: var(--g-color-base-generic);
+}
+.yc-persona__avatar span {
+  font-weight: var(--g-text-accent-font-weight);
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 11px;
+}
+.yc-persona__avatar img {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+}
+.yc-persona_size_n .yc-persona__text {
+  font-size: var(--g-text-body-2-font-size);
+  line-height: var(--g-text-body-2-line-height);
+  font-weight: var(--g-text-body-font-weight);
+  margin-right: 10px;
+}
+.yc-persona_size_s .yc-persona__text {
+  font-size: var(--g-text-body-1-font-size);
+  line-height: var(--g-text-body-1-line-height);
+  font-weight: var(--g-text-body-font-weight);
+  margin-right: 6px;
+}
+.yc-persona__close {
+  margin: 0;
+  padding: 0;
+  font-family: var(--g-text-body-font-family);
+  font-size: inherit;
+  font-weight: var(--g-text-body-font-weight);
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 28px;
+  width: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-right: 6px;
+  color: var(--g-color-text-secondary);
+  box-sizing: initial;
+  transition-property: color;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+.yc-persona__close:hover {
+  color: var(--g-color-text-primary);
+}
+.yc-persona__close-icon {
+  border-radius: var(--g-focus-border-radius);
+}
+.yc-persona__close:focus .yc-persona__close-icon {
+  outline: 2px solid var(--g-color-line-focus);
+}
+.yc-persona__close:focus:not(:focus-visible) .yc-persona__close-icon {
+  outline: 0;
+}

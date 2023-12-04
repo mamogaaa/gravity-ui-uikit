@@ -7,7 +7,7 @@
 node_modules
 
 /storybook-static
-/build
+# /build
 /styles/**/*.css
 /coverage
 /playwright/playwright/.cache

@@ -1,0 +1,19 @@
+.yc-action-tooltip__layout {
+  max-width: 300px;
+  box-sizing: border-box;
+}
+.yc-action-tooltip__heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.yc-action-tooltip__title {
+  color: var(--g-color-text-light-primary);
+}
+.yc-action-tooltip__hotkey {
+  margin-left: 8px;
+}
+.yc-action-tooltip__description {
+  margin-top: 4px;
+  color: var(--g-color-text-light-secondary);
+}

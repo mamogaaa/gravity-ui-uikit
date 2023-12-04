@@ -1,0 +1,3 @@
+import React from 'react';
+import type { InternalToastProps } from '../types';
+export declare const ToastsContext: React.Context<InternalToastProps[]>;

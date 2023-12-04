@@ -1,0 +1,4 @@
+import React from 'react';
+import type { QAProps } from '../types';
+import type { PopoverInstanceProps } from './types';
+export declare const Popover: React.ForwardRefExoticComponent<Pick<import("../Popup").PopupProps, "anchorRef" | "placement" | "modifiers" | "strategy"> & import("./types").PopoverExternalProps & import("./types").PopoverBehaviorProps & Partial<import("./types").PopoverDefaultProps> & QAProps & React.RefAttributes<PopoverInstanceProps>>;

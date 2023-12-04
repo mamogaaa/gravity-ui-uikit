@@ -1,0 +1,17 @@
+import React from 'react';
+import type { DOMProps, QAProps } from '../types';
+import { MenuGroup } from './MenuGroup';
+import type { MenuGroupProps } from './MenuGroup';
+import { MenuItem } from './MenuItem';
+import type { MenuItemProps } from './MenuItem';
+export type MenuSize = 's' | 'm' | 'l' | 'xl';
+export interface MenuProps extends DOMProps, QAProps {
+    size?: MenuSize;
+    children?: React.ReactNode;
+}
+export type { MenuItemProps, MenuGroupProps };
+interface MenuComponent extends React.ForwardRefExoticComponent<MenuProps & React.RefAttributes<HTMLUListElement>> {
+    Item: typeof MenuItem;
+    Group: typeof MenuGroup;
+}
+export declare const Menu: MenuComponent;

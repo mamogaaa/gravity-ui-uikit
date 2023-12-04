@@ -1,0 +1,22 @@
+.yc-radio-group_direction_horizontal.yc-radio-group_size_m {
+  line-height: 20px;
+}
+.yc-radio-group_direction_horizontal.yc-radio-group_size_m .yc-radio-group__option:not(:last-child) {
+  margin-right: 12px;
+}
+.yc-radio-group_direction_horizontal.yc-radio-group_size_l {
+  line-height: 24px;
+}
+.yc-radio-group_direction_horizontal.yc-radio-group_size_l .yc-radio-group__option:not(:last-child) {
+  margin-right: 15px;
+}
+.yc-radio-group_direction_vertical {
+  display: flex;
+  flex-direction: column;
+}
+.yc-radio-group_direction_vertical.yc-radio-group_size_m .yc-radio-group__option:not(:last-child) {
+  margin-bottom: 8px;
+}
+.yc-radio-group_direction_vertical.yc-radio-group_size_l .yc-radio-group__option:not(:last-child) {
+  margin-bottom: 12px;
+}

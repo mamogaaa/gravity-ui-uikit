@@ -1,0 +1,154 @@
+.yc-menu {
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: var(--g-text-body-1-font-size);
+  color: var(--g-color-text-primary);
+  background-color: var(--g-color-base-float);
+  user-select: none;
+  outline: none;
+}
+.yc-menu__list-group-item + .yc-menu__list-group-item, .yc-menu__list-item + .yc-menu__list-group-item, .yc-menu__list-group-item + .yc-menu__list-item {
+  border-top: 1px solid var(--g-color-line-generic);
+}
+.yc-menu__item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--g-color-text-primary);
+  text-decoration: none;
+  outline: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.yc-menu__item-icon {
+  display: flex;
+}
+.yc-menu__item-icon-end {
+  display: flex;
+  margin-right: 0;
+}
+.yc-menu__item-content {
+  flex-grow: 1;
+  min-width: 0;
+}
+.yc-menu__item:hover, .yc-menu__item:focus, .yc-menu__item_selected {
+  background-color: var(--g-color-base-simple-hover);
+}
+.yc-menu__item:focus:not(:focus-visible):not(:hover):not(.yc-menu__item_active) {
+  background-color: transparent;
+}
+.yc-menu__item_disabled {
+  color: var(--g-color-text-secondary);
+  cursor: default;
+  pointer-events: none;
+}
+.yc-menu__item_disabled:hover {
+  background-color: transparent;
+}
+.yc-menu__item_active {
+  cursor: default;
+  background-color: var(--g-color-base-selection);
+}
+.yc-menu__item_active:hover, .yc-menu__item_active:focus {
+  background-color: var(--g-color-base-selection-hover);
+}
+.yc-menu__item_theme_danger:not(.yc-menu__item_disabled) {
+  color: var(--g-color-text-danger);
+}
+.yc-menu__group-label {
+  font-weight: var(--g-text-accent-font-weight);
+  color: var(--g-color-text-hint);
+}
+.yc-menu__group-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.yc-menu_size_s {
+  line-height: 24px;
+  padding: 3px 0;
+}
+.yc-menu_size_s .yc-menu__item,
+.yc-menu_size_s .yc-menu__group-label {
+  padding: 0 10px;
+}
+.yc-menu_size_s .yc-menu__item-icon {
+  margin-right: 3px;
+}
+.yc-menu_size_s .yc-menu__item-icon-end {
+  margin-left: 3px;
+}
+.yc-menu_size_s .yc-menu__list-group-item + .yc-menu__list-group-item,
+.yc-menu_size_s .yc-menu__list-item + .yc-menu__list-group-item,
+.yc-menu_size_s .yc-menu__list-group-item + .yc-menu__list-item {
+  margin-top: 3px;
+  padding-top: 3px;
+}
+.yc-menu_size_m {
+  line-height: 24px;
+  padding: 4px 0;
+}
+.yc-menu_size_m .yc-menu__item,
+.yc-menu_size_m .yc-menu__group-label {
+  padding: 0 13px;
+}
+.yc-menu_size_m .yc-menu__item-icon {
+  margin-right: 4px;
+}
+.yc-menu_size_m .yc-menu__item-icon-end {
+  margin-left: 4px;
+}
+.yc-menu_size_m .yc-menu__list-group-item + .yc-menu__list-group-item,
+.yc-menu_size_m .yc-menu__list-item + .yc-menu__list-group-item,
+.yc-menu_size_m .yc-menu__list-group-item + .yc-menu__list-item {
+  margin-top: 4px;
+  padding-top: 4px;
+}
+.yc-menu_size_l {
+  line-height: 28px;
+  padding: 5px 0;
+}
+.yc-menu_size_l .yc-menu__item,
+.yc-menu_size_l .yc-menu__group-label {
+  padding: 0 15px;
+}
+.yc-menu_size_l .yc-menu__item-icon {
+  margin-right: 5px;
+}
+.yc-menu_size_l .yc-menu__item-icon-end {
+  margin-left: 5px;
+}
+.yc-menu_size_l .yc-menu__list-group-item + .yc-menu__list-group-item,
+.yc-menu_size_l .yc-menu__list-item + .yc-menu__list-group-item,
+.yc-menu_size_l .yc-menu__list-group-item + .yc-menu__list-item {
+  margin-top: 5px;
+  padding-top: 5px;
+}
+.yc-menu_size_xl {
+  font-size: var(--g-text-body-2-font-size);
+  line-height: 36px;
+  padding: 6px 0;
+}
+.yc-menu_size_xl .yc-menu__item,
+.yc-menu_size_xl .yc-menu__group-label {
+  padding: 0 15px;
+}
+.yc-menu_size_xl .yc-menu__item-icon {
+  margin-right: 6px;
+}
+.yc-menu_size_xl .yc-menu__item-icon-end {
+  margin-left: 6px;
+}
+.yc-menu_size_xl .yc-menu__list-group-item:not(:first-child) {
+  margin-top: 6px;
+  padding-top: 6px;
+}
+.yc-menu_size_xl .yc-menu__list-group-item:not(:last-child) {
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+}

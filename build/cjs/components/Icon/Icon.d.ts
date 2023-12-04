@@ -1,0 +1,18 @@
+import React from 'react';
+import type { QAProps } from '../types';
+import type { SVGIconData } from './types';
+export type IconData = SVGIconData;
+interface IconComposition {
+    prefix?: string;
+}
+export interface IconProps extends QAProps {
+    data: IconData;
+    width?: number | string;
+    height?: number | string;
+    size?: number | string;
+    fill?: string;
+    stroke?: string;
+    className?: string;
+}
+export declare const Icon: React.ForwardRefExoticComponent<IconProps & React.RefAttributes<SVGSVGElement>> & IconComposition;
+export {};

@@ -1,0 +1,4 @@
+import React from 'react';
+import type { SelectPopupProps } from './types';
+import './SelectPopup.css';
+export declare const SelectPopup: React.ForwardRefExoticComponent<SelectPopupProps & React.RefAttributes<HTMLDivElement>>;

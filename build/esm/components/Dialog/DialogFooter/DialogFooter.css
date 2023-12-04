@@ -1,0 +1,25 @@
+.yc-dialog-footer {
+  padding: var(--yc-dialog-footer-padding);
+  display: flex;
+  align-items: center;
+}
+.yc-dialog-footer__bts-wrapper {
+  display: flex;
+}
+.yc-dialog-footer__children {
+  flex-grow: 1;
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+.yc-dialog-footer__button {
+  min-width: 128px;
+  position: relative;
+}
+.yc-dialog-footer__bts-wrapper > .yc-dialog-footer__button {
+  margin-left: 10px;
+}
+.yc-dialog-footer__error {
+  padding: 10px;
+  color: var(--g-color-text-danger);
+}

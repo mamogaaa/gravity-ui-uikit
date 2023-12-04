@@ -1,0 +1,7 @@
+import React from 'react';
+import { blockNew as block } from '../../../utils/cn';
+import './EmptyOptions.css';
+const b = block('select-empty-placeholder');
+export const EmptyOptions = ({ renderEmptyOptions, filter }) => {
+    return React.createElement("div", { className: b({ empty: !renderEmptyOptions }) }, renderEmptyOptions === null || renderEmptyOptions === void 0 ? void 0 : renderEmptyOptions({ filter }));
+};

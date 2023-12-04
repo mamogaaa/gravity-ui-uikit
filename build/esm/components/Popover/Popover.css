@@ -1,0 +1,121 @@
+.yc-popover {
+  display: inline-block;
+  position: relative;
+}
+.yc-popover:not(.yc-popover_disabled) {
+  cursor: pointer;
+}
+.yc-popover__handler {
+  display: inline-block;
+}
+.yc-popover__tooltip {
+  --yc-popover-padding: 16px;
+  --yc-popover-close-margin: 8px;
+  --yc-popover-close-size: 24px;
+}
+.yc-popover__tooltip-popup-content {
+  box-sizing: border-box;
+  min-height: 40px;
+  max-width: var(--yc-popover-max-width);
+  padding: var(--yc-popover-padding);
+  cursor: default;
+}
+.yc-popover__tooltip-title {
+  font-size: var(--g-text-subheader-3-font-size);
+  line-height: var(--g-text-subheader-3-line-height);
+  font-weight: var(--g-text-subheader-font-weight);
+  display: inline-flex;
+  margin: 0 0 12px;
+}
+.yc-popover__tooltip-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px -5px -5px;
+}
+.yc-popover__tooltip-button {
+  margin: 5px;
+  flex: 1;
+}
+.yc-popover__tooltip-close {
+  position: absolute;
+  top: var(--yc-popover-close-margin);
+  right: var(--yc-popover-close-margin);
+}
+.yc-popover__tooltip-content {
+  font-size: var(--g-text-body-1-font-size);
+  line-height: var(--g-text-body-1-line-height);
+  font-weight: var(--g-text-body-font-weight);
+  overflow-wrap: break-word;
+}
+.yc-popover__tooltip-content_secondary {
+  opacity: 0.7;
+}
+.yc-popover__tooltip-links > * {
+  margin-top: 8px;
+}
+.yc-popover__tooltip-links > *:first-child {
+  margin-top: 0;
+}
+.yc-popover__tooltip-content + .yc-popover__tooltip-links > *:first-child {
+  margin-top: 12px;
+}
+.yc-popover__tooltip-link {
+  font-size: var(--g-text-body-1-font-size);
+  line-height: var(--g-text-body-1-line-height);
+  font-weight: var(--g-text-body-font-weight);
+  display: inline-block;
+}
+.yc-popover__tooltip_theme_info.yc-popover__tooltip_theme_info, .yc-popover__tooltip_theme_info .yc-popover__tooltip_theme_announcement, .yc-popover__tooltip_theme_announcement.yc-popover__tooltip_theme_info, .yc-popover__tooltip_theme_announcement .yc-popover__tooltip_theme_announcement {
+  color: var(--g-color-text-primary);
+}
+.yc-popover__tooltip_force-links-appearance.yc-popover__tooltip_theme_info .yc-popover__tooltip-content a:not(.yc-button), .yc-popover__tooltip_theme_announcement .yc-popover__tooltip-content a:not(.yc-button) {
+  text-decoration: none;
+  color: var(--g-color-text-link);
+}
+.yc-popover__tooltip_force-links-appearance.yc-popover__tooltip_theme_info .yc-popover__tooltip-content a:not(.yc-button):hover, .yc-popover__tooltip_theme_announcement .yc-popover__tooltip-content a:not(.yc-button):hover {
+  color: var(--g-color-text-link-hover);
+}
+
+.yc-popover__tooltip_theme_announcement.yc-popover__tooltip_theme_announcement {
+  --yc-popup-background-color: var(--g-color-base-simple-hover-solid);
+  --yc-popup-border-color: var(--g-color-base-simple-hover-solid);
+}
+.yc-popover__tooltip_theme_special.yc-popover__tooltip_theme_special {
+  --yc-popup-background-color: var(--g-color-base-brand);
+  --yc-popup-border-color: var(--g-color-base-brand);
+  color: var(--g-color-text-light-primary);
+}
+.yc-popover__tooltip_theme_special .yc-popover__tooltip-content a:not(.yc-button) {
+  font-weight: var(--g-text-accent-font-weight);
+  color: var(--g-color-text-light-primary);
+}
+.yc-popover__tooltip_theme_special .yc-popover__tooltip-content a:not(.yc-button):hover {
+  color: var(--g-color-text-light-secondary);
+}
+.yc-popover__tooltip_theme_special .yc-link {
+  color: var(--g-color-text-light-primary);
+}
+.yc-popover__tooltip_theme_special .yc-link:hover {
+  color: var(--g-color-text-light-secondary);
+}
+.yc-popover__tooltip_size_l {
+  --yc-popover-padding: 24px;
+}
+.yc-popover__tooltip_size_l .yc-popover__tooltip-title {
+  font-size: var(--g-text-header-1-font-size);
+  line-height: var(--g-text-header-1-line-height);
+  font-weight: var(--g-text-header-font-weight);
+}
+.yc-popover__tooltip_size_l .yc-popover__tooltip-content {
+  font-size: var(--g-text-body-2-font-size);
+  line-height: var(--g-text-body-2-line-height);
+  font-weight: var(--g-text-body-font-weight);
+}
+.yc-popover__tooltip_with-close .yc-popover__tooltip-title,
+.yc-popover__tooltip_with-close .yc-popover__tooltip-content {
+  padding-right: calc(var(--yc-popover-close-margin) + var(--yc-popover-close-size) - var(--yc-popover-padding));
+}
+
+.g-root {
+  --yc-popover-max-width: 300px;
+}

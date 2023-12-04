@@ -1,0 +1,32 @@
+.yc-table__checkbox_cell {
+  position: relative;
+  min-width: 17px;
+}
+.yc-table__selection-checkbox {
+  display: flex;
+  align-items: center;
+  padding: inherit;
+  border-bottom: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.yc-table__selection-checkbox_vertical-align_top {
+  align-items: start;
+}
+.yc-table__row_selected {
+  background: var(--g-color-base-selection);
+}
+.yc-table__row_selected .yc-table__cell_sticky_left,
+.yc-table__row_selected .yc-table__cell_sticky_right {
+  background: linear-gradient(to right, var(--g-color-base-selection), var(--g-color-base-selection)), linear-gradient(to right, var(--g-color-base-background), var(--g-color-base-background));
+}
+.yc-table__row_selected.yc-table__row_interactive:hover {
+  background: var(--g-color-base-selection-hover);
+}
+.yc-table__row_selected.yc-table__row_interactive:hover .yc-table__cell_sticky_left,
+.yc-table__row_selected.yc-table__row_interactive:hover .yc-table__cell_sticky_right {
+  background: linear-gradient(to right, var(--g-color-base-selection-hover), var(--g-color-base-selection-hover)), linear-gradient(to right, var(--g-color-base-background), var(--g-color-base-background));
+}

@@ -1,0 +1,3 @@
+import React from 'react';
+import type { ToasterContextMethods } from '../types';
+export declare const ToasterContext: React.Context<ToasterContextMethods | null>;

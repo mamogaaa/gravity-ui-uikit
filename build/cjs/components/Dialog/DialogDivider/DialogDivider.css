@@ -1,0 +1,4 @@
+.yc-dialog-divider {
+  border-top: 1px solid var(--g-color-line-generic);
+  margin: var(--yc-dialog-divider-margin);
+}

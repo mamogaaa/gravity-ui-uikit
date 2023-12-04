@@ -1,0 +1,3 @@
+import React from 'react';
+export const ToasterContext = React.createContext(null);
+ToasterContext.displayName = 'ToasterContext';

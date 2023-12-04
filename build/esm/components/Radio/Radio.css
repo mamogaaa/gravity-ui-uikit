@@ -1,0 +1,101 @@
+@charset "UTF-8";
+.yc-radio__indicator {
+  display: inline-block;
+  position: relative;
+  cursor: inherit;
+}
+.yc-radio__indicator::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  border: 1px solid var(--g-color-line-generic-accent);
+  border-radius: 50%;
+  transition: background 0.1s linear;
+}
+.yc-radio__indicator::after {
+  content: " ";
+  visibility: hidden;
+}
+.yc-radio__disc::before {
+  content: "";
+  position: absolute;
+  border: none;
+  background-color: var(--g-color-text-brand-contrast);
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0.1);
+  transition: opacity 0.1s, transform 0.2s;
+}
+.yc-radio__control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: inherit;
+}
+.yc-radio__outline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: none;
+  pointer-events: none;
+  border-radius: 50%;
+}
+.yc-radio__control:focus + .yc-radio__outline {
+  box-shadow: 0 0 0 2px var(--g-color-line-focus);
+}
+.yc-radio__control:focus:not(:focus-visible) + .yc-radio__outline {
+  box-shadow: none;
+}
+.yc-radio_size_m .yc-radio__indicator {
+  width: 14px;
+  height: 14px;
+}
+.yc-radio_size_m .yc-radio__disc::before {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+}
+.yc-radio_size_l .yc-radio__indicator {
+  width: 17px;
+  height: 17px;
+}
+.yc-radio_size_l .yc-radio__disc::before {
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+}
+.yc-radio:hover .yc-radio__indicator::before {
+  border-color: var(--g-color-line-generic-accent-hover);
+}
+.yc-radio_checked .yc-radio__indicator::before {
+  background-color: var(--g-color-base-brand);
+  border: transparent;
+}
+.yc-radio_checked .yc-radio__indicator .yc-radio__disc::before {
+  opacity: 1;
+  transform: scale(1);
+}
+.yc-radio_disabled .yc-radio__indicator::before {
+  background-color: var(--g-color-base-generic-accent-disabled);
+  border: transparent;
+}
+.yc-radio_disabled.yc-radio_checked .yc-radio__indicator::before {
+  background-color: var(--g-color-base-brand);
+  opacity: 0.5;
+}

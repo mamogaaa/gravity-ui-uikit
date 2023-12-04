@@ -1,0 +1,15 @@
+.yc-clipboard-icon__state {
+  animation: yc-clipboard-icon-state-dash 1s;
+}
+
+@keyframes yc-clipboard-icon-state-dash {
+  0% {
+    stroke-dasharray: 0 15;
+  }
+  40% {
+    stroke-dasharray: 15 0;
+  }
+  100% {
+    stroke-dasharray: 15 0;
+  }
+}

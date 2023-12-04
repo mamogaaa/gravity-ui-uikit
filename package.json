@@ -28,7 +28,12 @@
             "require": "./build/cjs/components/utils/addComponentKeysets.js",
             "import": "./build/esm/components/utils/addComponentKeysets.js"
         },
-        "./styles/*": "./styles/*"
+        "./styles/*": "./styles/*",
+        "./components/*": {
+            "types": "./build/esm/components/*",
+            "require": "./build/cjs/components/*",
+            "import": "./build/esm/components/*"
+        }
     },
     "main": "./build/cjs/index.js",
     "module": "./build/esm/index.js",

@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SelectPopup = void 0;
+const tslib_1 = require("tslib");
+const react_1 = tslib_1.__importDefault(require("react"));
+const Popup_1 = require("../../../Popup");
+const Sheet_1 = require("../../../Sheet");
+const cn_1 = require("../../../utils/cn");
+const constants_1 = require("../../constants");
+const modifiers_1 = require("./modifiers");
+const b = (0, cn_1.blockNew)('select-popup');
+exports.SelectPopup = react_1.default.forwardRef(({ handleClose, width, open, controlRef, children, className, disablePortal, virtualized, mobile, id, }, ref) => mobile ? (react_1.default.createElement(Sheet_1.Sheet, { qa: constants_1.SelectQa.SHEET, className: className, visible: Boolean(open), onClose: handleClose }, children)) : (react_1.default.createElement(Popup_1.Popup, { contentClassName: b(null, className), qa: constants_1.SelectQa.POPUP, anchorRef: ref, placement: ['bottom-start', 'bottom-end', 'top-start', 'top-end'], offset: [constants_1.BORDER_WIDTH, constants_1.BORDER_WIDTH], open: open, onClose: handleClose, disablePortal: disablePortal, restoreFocus: true, restoreFocusRef: controlRef, modifiers: (0, modifiers_1.getModifiers)({ width, disablePortal, virtualized }), id: id }, children)));
+exports.SelectPopup.displayName = 'SelectPopup';

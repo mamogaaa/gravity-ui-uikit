@@ -1,0 +1,3 @@
+.g-select-filter .g-select-filter__input, .g-select-filter .g-select-filter__input:hover, .g-select-filter .g-select-filter__input:focus {
+  border-color: var(--g-color-line-generic-active);
+}

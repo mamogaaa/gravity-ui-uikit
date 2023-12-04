@@ -1,0 +1,14 @@
+.g-pagination-ellipsis {
+  font-size: var(--g-text-body-1-font-size);
+  line-height: var(--g-text-body-1-line-height);
+  font-weight: var(--g-text-body-font-weight);
+  display: flex;
+  align-items: flex-end;
+  color: var(--g-color-text-secondary);
+}
+.g-pagination-ellipsis_size_m {
+  padding-bottom: 5px;
+}
+.g-pagination-ellipsis_size_l {
+  padding-bottom: 9px;
+}

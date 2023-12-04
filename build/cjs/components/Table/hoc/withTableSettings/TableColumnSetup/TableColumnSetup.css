@@ -1,0 +1,46 @@
+.yc-table-column-setup__controls {
+  padding: 4px;
+}
+.yc-table-column-setup__status {
+  margin-left: 5px;
+  color: var(--g-color-text-secondary);
+}
+.yc-table-column-setup__tick-wrap {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  visibility: hidden;
+}
+.yc-table-column-setup__tick-wrap_visible {
+  visibility: visible;
+}
+.yc-table-column-setup__tick {
+  color: var(--g-color-base-brand);
+}
+.yc-table-column-setup__lock-wrap {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--g-color-text-hint);
+}
+.yc-table-column-setup__title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.yc-table-column-setup__items {
+  height: var(--yc-list-height);
+  overflow-x: auto;
+}
+.yc-table-column-setup__item.yc-table-column-setup__item {
+  padding: 0 8px 0 32px;
+  cursor: pointer;
+  position: relative;
+}
+.yc-table-column-setup__item.yc-table-column-setup__item .yc-list__item-sort-icon {
+  cursor: move;
+}

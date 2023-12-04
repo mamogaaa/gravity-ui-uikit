@@ -1,0 +1,19 @@
+.yc-table__copy {
+  display: inline-flex;
+  align-items: center;
+}
+.yc-table__copy-content {
+  margin-right: 5px;
+}
+.yc-table__copy-button {
+  line-height: 0;
+  visibility: hidden;
+  color: var(--g-color-text-secondary);
+  opacity: 0.5;
+}
+.yc-table__copy-button:hover {
+  opacity: 1;
+}
+.yc-table__cell:hover .yc-table__copy-button {
+  visibility: visible;
+}

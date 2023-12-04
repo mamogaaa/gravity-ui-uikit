@@ -1,0 +1,8 @@
+.yc-table__settings {
+  height: 18px;
+  display: flex;
+  align-items: center;
+}
+.yc-table__settings-button {
+  color: var(--g-color-text-secondary) !important;
+}

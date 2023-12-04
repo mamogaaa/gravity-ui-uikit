@@ -1,0 +1,28 @@
+.yc-skeleton {
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: var(--g-color-base-generic);
+}
+.yc-skeleton::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(90deg, transparent, var(--g-color-base-generic));
+  animation: yc-skeleton 1.2s ease-out infinite;
+  content: "";
+}
+
+@keyframes yc-skeleton {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

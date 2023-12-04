@@ -1,0 +1,20 @@
+.yc-outer-additional-content {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: top;
+}
+.yc-outer-additional-content__note, .yc-outer-additional-content__error {
+  margin-top: 2px;
+}
+.yc-outer-additional-content__error {
+  font-size: var(--g-text-body-1-font-size);
+  line-height: var(--g-text-body-1-line-height);
+  font-weight: var(--g-text-body-font-weight);
+  color: var(--g-color-text-danger);
+}
+.yc-outer-additional-content__error:not(:last-child) {
+  margin-right: var(--g-spacing-2);
+}
+.yc-outer-additional-content__note {
+  margin-left: auto;
+}

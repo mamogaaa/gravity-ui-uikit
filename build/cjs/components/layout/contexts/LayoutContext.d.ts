@@ -1,0 +1,8 @@
+import React from 'react';
+import type { LayoutTheme, MediaType } from '../types';
+interface LayoutContextProps {
+    theme: LayoutTheme;
+    activeMediaQuery: MediaType;
+}
+export declare const LayoutContext: React.Context<LayoutContextProps>;
+export {};

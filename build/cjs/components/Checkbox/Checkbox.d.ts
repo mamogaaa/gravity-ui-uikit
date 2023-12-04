@@ -1,0 +1,11 @@
+import React from 'react';
+import type { ControlLabelSize } from '../ControlLabel';
+import type { ControlProps, DOMProps, QAProps } from '../types';
+export type CheckboxSize = ControlLabelSize;
+export interface CheckboxProps extends ControlProps, DOMProps, QAProps {
+    size?: CheckboxSize;
+    content?: React.ReactNode;
+    children?: React.ReactNode;
+    title?: string;
+}
+export declare const Checkbox: React.ForwardRefExoticComponent<CheckboxProps & React.RefAttributes<HTMLLabelElement>>;

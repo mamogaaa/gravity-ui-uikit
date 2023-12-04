@@ -1,0 +1,11 @@
+import React from 'react';
+import type { QAProps } from '../types';
+import type { TocItem as TocItemType } from './types';
+import './Toc.css';
+export interface TocProps extends QAProps {
+    className?: string;
+    items: TocItemType[];
+    value?: string;
+    onUpdate?: (value: string) => void;
+}
+export declare const Toc: React.ForwardRefExoticComponent<TocProps & React.RefAttributes<HTMLElement>>;

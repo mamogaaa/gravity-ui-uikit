@@ -1,0 +1,13 @@
+.yc-alert {
+  --yc-alert-border-radius: var(--yc-card-border-radius, 8px);
+  border-radius: var(--yc-alert-border-radius);
+}
+.yc-alert_corners_square {
+  --yc-alert-border-radius: 0px;
+}
+.yc-alert__text-content {
+  width: 100%;
+}
+.yc-alert__actions_minContent {
+  width: min-content;
+}

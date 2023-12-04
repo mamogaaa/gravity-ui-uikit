@@ -1,0 +1,14 @@
+.g-toc__title {
+  font-size: var(--g-text-body-2-font-size);
+  line-height: var(--g-text-body-2-line-height);
+  font-weight: var(--g-text-body-font-weight);
+  color: var(--g-color-text-primary);
+  margin-bottom: 12px;
+}
+.g-toc__sections, .g-toc__subsections {
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  list-style: none;
+}

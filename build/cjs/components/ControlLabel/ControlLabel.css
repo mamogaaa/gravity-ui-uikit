@@ -1,0 +1,38 @@
+.yc-control-label {
+  display: inline-flex;
+  font-family: var(--g-text-body-font-family);
+  font-weight: var(--g-text-body-font-weight);
+  color: var(--g-color-text-primary);
+  user-select: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+.yc-control-label_disabled {
+  cursor: default;
+  pointer-events: none;
+}
+.yc-control-label_size_m {
+  font-size: var(--g-text-body-1-font-size);
+  line-height: 15px;
+}
+.yc-control-label_size_l {
+  font-size: var(--g-text-body-2-font-size);
+  line-height: 18px;
+}
+.yc-control-label__indicator {
+  flex-shrink: 0;
+}
+.yc-control-label__text {
+  flex-grow: 1;
+  white-space: normal;
+}
+.yc-control-label_disabled .yc-control-label__text {
+  opacity: 0.6;
+}
+.yc-control-label_size_m .yc-control-label__text {
+  margin-left: 5px;
+}
+.yc-control-label_size_l .yc-control-label__text {
+  margin-left: 7px;
+}

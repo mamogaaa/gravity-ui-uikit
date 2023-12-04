@@ -1,0 +1,4 @@
+.yc-dialog-body {
+  padding: var(--yc-dialog-body-padding);
+  flex: 1 1 100%;
+}

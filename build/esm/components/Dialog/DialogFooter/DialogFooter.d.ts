@@ -1,0 +1,38 @@
+import React from 'react';
+import type { ButtonProps } from '../../Button';
+import './DialogFooter.css';
+type ButtonPreset = 'default' | 'success' | 'danger';
+interface DialogFooterOwnProps {
+    onClickButtonApply?: (event: React.MouseEvent<HTMLElement, MouseEvent> | KeyboardEvent) => void;
+    onClickButtonCancel?: (event: React.MouseEvent<HTMLElement, MouseEvent>) => void;
+    textButtonCancel?: string;
+    textButtonApply?: string;
+    propsButtonCancel?: Partial<ButtonProps>;
+    propsButtonApply?: Partial<ButtonProps>;
+    loading?: boolean;
+    children?: React.ReactNode;
+    errorText?: string;
+    renderButtons?: (buttonApply: React.ReactNode, buttonCancel: React.ReactNode) => React.ReactNode;
+}
+interface DialogFooterDefaultProps {
+    preset: ButtonPreset;
+    showError: boolean;
+    /**
+     * @deprecated use on onEnterKeyDown on Dialog component
+     */
+    listenKeyEnter: boolean;
+}
+export type DialogFooterProps = DialogFooterOwnProps & Partial<DialogFooterDefaultProps>;
+type DialogFooterInnerProps = DialogFooterOwnProps & DialogFooterDefaultProps;
+export declare class DialogFooter extends React.Component<DialogFooterInnerProps> {
+    static defaultProps: DialogFooterDefaultProps;
+    private errorTooltipRef;
+    componentDidMount(): void;
+    componentDidUpdate(prevProps: DialogFooterInnerProps): void;
+    componentWillUnmount(): void;
+    render(): React.JSX.Element;
+    private attachKeyDownListeners;
+    private detachKeyDownListeners;
+    private handleKeyDown;
+}
+export {};

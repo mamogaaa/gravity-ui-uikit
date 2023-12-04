@@ -1,0 +1,5 @@
+import React from 'react';
+export const TabsContext = React.createContext({
+    activeTabId: undefined,
+});
+TabsContext.displayName = 'TabsContext';

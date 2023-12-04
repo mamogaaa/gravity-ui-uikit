@@ -1,0 +1,174 @@
+/* stylelint-disable declaration-no-important */
+.yc-row {
+  display: flex;
+  flex-flow: row wrap;
+  flex-shrink: 0;
+}
+.yc-row_s_0 {
+  margin-top: calc(-1 * var(--g-spacing-0));
+  margin-left: calc(-1 * var(--g-spacing-0));
+}
+.yc-row_s_0 > .yc-col {
+  padding-top: var(--g-spacing-0);
+  padding-left: var(--g-spacing-0);
+}
+.yc-row_sr_0 {
+  margin-top: calc(-1 * var(--g-spacing-0)) !important;
+}
+.yc-row_sr_0 > .yc-col {
+  padding-top: var(--g-spacing-0) !important;
+}
+.yc-row_s_half {
+  margin-top: calc(-1 * var(--g-spacing-half));
+  margin-left: calc(-1 * var(--g-spacing-half));
+}
+.yc-row_s_half > .yc-col {
+  padding-top: var(--g-spacing-half);
+  padding-left: var(--g-spacing-half);
+}
+.yc-row_sr_half {
+  margin-top: calc(-1 * var(--g-spacing-half)) !important;
+}
+.yc-row_sr_half > .yc-col {
+  padding-top: var(--g-spacing-half) !important;
+}
+.yc-row_s_1 {
+  margin-top: calc(-1 * var(--g-spacing-1));
+  margin-left: calc(-1 * var(--g-spacing-1));
+}
+.yc-row_s_1 > .yc-col {
+  padding-top: var(--g-spacing-1);
+  padding-left: var(--g-spacing-1);
+}
+.yc-row_sr_1 {
+  margin-top: calc(-1 * var(--g-spacing-1)) !important;
+}
+.yc-row_sr_1 > .yc-col {
+  padding-top: var(--g-spacing-1) !important;
+}
+.yc-row_s_2 {
+  margin-top: calc(-1 * var(--g-spacing-2));
+  margin-left: calc(-1 * var(--g-spacing-2));
+}
+.yc-row_s_2 > .yc-col {
+  padding-top: var(--g-spacing-2);
+  padding-left: var(--g-spacing-2);
+}
+.yc-row_sr_2 {
+  margin-top: calc(-1 * var(--g-spacing-2)) !important;
+}
+.yc-row_sr_2 > .yc-col {
+  padding-top: var(--g-spacing-2) !important;
+}
+.yc-row_s_3 {
+  margin-top: calc(-1 * var(--g-spacing-3));
+  margin-left: calc(-1 * var(--g-spacing-3));
+}
+.yc-row_s_3 > .yc-col {
+  padding-top: var(--g-spacing-3);
+  padding-left: var(--g-spacing-3);
+}
+.yc-row_sr_3 {
+  margin-top: calc(-1 * var(--g-spacing-3)) !important;
+}
+.yc-row_sr_3 > .yc-col {
+  padding-top: var(--g-spacing-3) !important;
+}
+.yc-row_s_4 {
+  margin-top: calc(-1 * var(--g-spacing-4));
+  margin-left: calc(-1 * var(--g-spacing-4));
+}
+.yc-row_s_4 > .yc-col {
+  padding-top: var(--g-spacing-4);
+  padding-left: var(--g-spacing-4);
+}
+.yc-row_sr_4 {
+  margin-top: calc(-1 * var(--g-spacing-4)) !important;
+}
+.yc-row_sr_4 > .yc-col {
+  padding-top: var(--g-spacing-4) !important;
+}
+.yc-row_s_5 {
+  margin-top: calc(-1 * var(--g-spacing-5));
+  margin-left: calc(-1 * var(--g-spacing-5));
+}
+.yc-row_s_5 > .yc-col {
+  padding-top: var(--g-spacing-5);
+  padding-left: var(--g-spacing-5);
+}
+.yc-row_sr_5 {
+  margin-top: calc(-1 * var(--g-spacing-5)) !important;
+}
+.yc-row_sr_5 > .yc-col {
+  padding-top: var(--g-spacing-5) !important;
+}
+.yc-row_s_6 {
+  margin-top: calc(-1 * var(--g-spacing-6));
+  margin-left: calc(-1 * var(--g-spacing-6));
+}
+.yc-row_s_6 > .yc-col {
+  padding-top: var(--g-spacing-6);
+  padding-left: var(--g-spacing-6);
+}
+.yc-row_sr_6 {
+  margin-top: calc(-1 * var(--g-spacing-6)) !important;
+}
+.yc-row_sr_6 > .yc-col {
+  padding-top: var(--g-spacing-6) !important;
+}
+.yc-row_s_7 {
+  margin-top: calc(-1 * var(--g-spacing-7));
+  margin-left: calc(-1 * var(--g-spacing-7));
+}
+.yc-row_s_7 > .yc-col {
+  padding-top: var(--g-spacing-7);
+  padding-left: var(--g-spacing-7);
+}
+.yc-row_sr_7 {
+  margin-top: calc(-1 * var(--g-spacing-7)) !important;
+}
+.yc-row_sr_7 > .yc-col {
+  padding-top: var(--g-spacing-7) !important;
+}
+.yc-row_s_8 {
+  margin-top: calc(-1 * var(--g-spacing-8));
+  margin-left: calc(-1 * var(--g-spacing-8));
+}
+.yc-row_s_8 > .yc-col {
+  padding-top: var(--g-spacing-8);
+  padding-left: var(--g-spacing-8);
+}
+.yc-row_sr_8 {
+  margin-top: calc(-1 * var(--g-spacing-8)) !important;
+}
+.yc-row_sr_8 > .yc-col {
+  padding-top: var(--g-spacing-8) !important;
+}
+.yc-row_s_9 {
+  margin-top: calc(-1 * var(--g-spacing-9));
+  margin-left: calc(-1 * var(--g-spacing-9));
+}
+.yc-row_s_9 > .yc-col {
+  padding-top: var(--g-spacing-9);
+  padding-left: var(--g-spacing-9);
+}
+.yc-row_sr_9 {
+  margin-top: calc(-1 * var(--g-spacing-9)) !important;
+}
+.yc-row_sr_9 > .yc-col {
+  padding-top: var(--g-spacing-9) !important;
+}
+.yc-row_s_10 {
+  margin-top: calc(-1 * var(--g-spacing-10));
+  margin-left: calc(-1 * var(--g-spacing-10));
+}
+.yc-row_s_10 > .yc-col {
+  padding-top: var(--g-spacing-10);
+  padding-left: var(--g-spacing-10);
+}
+.yc-row_sr_10 {
+  margin-top: calc(-1 * var(--g-spacing-10)) !important;
+}
+.yc-row_sr_10 > .yc-col {
+  padding-top: var(--g-spacing-10) !important;
+}

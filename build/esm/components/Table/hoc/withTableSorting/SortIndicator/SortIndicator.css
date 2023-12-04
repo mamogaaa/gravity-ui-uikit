@@ -1,0 +1,6 @@
+.yc-sort-indicator__caret {
+  padding: 1px 0;
+}
+.yc-sort-indicator__caret > svg {
+  display: block;
+}

@@ -1,0 +1,21 @@
+.yc-table__sort {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: top;
+  cursor: pointer;
+  user-select: none;
+}
+.yc-table__sort-spacer {
+  width: 5px;
+}
+.yc-table__sort-indicator {
+  color: var(--g-color-text-hint);
+  opacity: 0;
+}
+.yc-table__sort_active .yc-table__sort-indicator {
+  color: var(--g-color-text-primary);
+  opacity: 1;
+}
+.yc-table__sort:hover .yc-table__sort-indicator {
+  opacity: 1;
+}

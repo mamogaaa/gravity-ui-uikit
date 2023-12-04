@@ -1,0 +1,13 @@
+.g-pagination-page__simple {
+  font-size: var(--g-text-body-1-font-size);
+  line-height: var(--g-text-body-1-line-height);
+  font-weight: var(--g-text-body-font-weight);
+  display: flex;
+  align-items: center;
+}
+.g-pagination-page__simple_size_m {
+  padding: 0 13px;
+}
+.g-pagination-page__simple_size_l {
+  padding: 0 18px;
+}

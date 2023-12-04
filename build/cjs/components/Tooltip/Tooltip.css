@@ -1,0 +1,11 @@
+.yc-tooltip[class] {
+  --yc-popup-border-width: 0;
+  --yc-popup-background-color: var(--g-color-base-float-heavy);
+}
+.yc-tooltip__popup-content {
+  pointer-events: none;
+}
+.yc-tooltip__content {
+  padding: 6px 12px;
+  color: var(--g-color-text-light-primary);
+}

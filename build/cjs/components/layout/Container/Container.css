@@ -1,0 +1,59 @@
+.yc-container {
+  margin-inline: auto;
+  max-width: 100%;
+  height: 100%;
+}
+.yc-container_mw_s {
+  max-width: 576px;
+}
+.yc-container_mw_m {
+  max-width: 768px;
+}
+.yc-container_mw_l {
+  max-width: 1080px;
+}
+.yc-container_mw_xl {
+  max-width: 1200px;
+}
+.yc-container_mw_xxl {
+  max-width: 1400px;
+}
+.yc-container_mw_xxxl {
+  max-width: 1920px;
+}
+.yc-container_sr_0 > .yc-row:not(:last-child) {
+  margin-bottom: var(--g-spacing-0);
+}
+.yc-container_sr_half > .yc-row:not(:last-child) {
+  margin-bottom: var(--g-spacing-half);
+}
+.yc-container_sr_1 > .yc-row:not(:last-child) {
+  margin-bottom: var(--g-spacing-1);
+}
+.yc-container_sr_2 > .yc-row:not(:last-child) {
+  margin-bottom: var(--g-spacing-2);
+}
+.yc-container_sr_3 > .yc-row:not(:last-child) {
+  margin-bottom: var(--g-spacing-3);
+}
+.yc-container_sr_4 > .yc-row:not(:last-child) {
+  margin-bottom: var(--g-spacing-4);
+}
+.yc-container_sr_5 > .yc-row:not(:last-child) {
+  margin-bottom: var(--g-spacing-5);
+}
+.yc-container_sr_6 > .yc-row:not(:last-child) {
+  margin-bottom: var(--g-spacing-6);
+}
+.yc-container_sr_7 > .yc-row:not(:last-child) {
+  margin-bottom: var(--g-spacing-7);
+}
+.yc-container_sr_8 > .yc-row:not(:last-child) {
+  margin-bottom: var(--g-spacing-8);
+}
+.yc-container_sr_9 > .yc-row:not(:last-child) {
+  margin-bottom: var(--g-spacing-9);
+}
+.yc-container_sr_10 > .yc-row:not(:last-child) {
+  margin-bottom: var(--g-spacing-10);
+}

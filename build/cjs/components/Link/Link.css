@@ -1,0 +1,31 @@
+.yc-link {
+  text-decoration: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border-radius: var(--g-focus-border-radius);
+}
+.yc-link:focus {
+  outline: 2px solid var(--g-color-line-focus);
+}
+.yc-link:focus:not(:focus-visible) {
+  outline: 0;
+}
+.yc-link_view_normal, .yc-link_view_normal-visitable {
+  color: var(--g-color-text-link);
+}
+.yc-link_view_primary {
+  color: var(--g-color-text-primary);
+}
+.yc-link_view_secondary {
+  color: var(--g-color-text-secondary);
+}
+.yc-link_view_normal:hover, .yc-link_view_primary:hover, .yc-link_view_secondary:hover {
+  color: var(--g-color-text-link-hover);
+}
+.yc-link_visitable:visited, .yc-link_view_normal-visitable:visited {
+  color: var(--g-color-text-link-visited);
+}
+.yc-link_visitable:visited:hover, .yc-link_view_normal-visitable:visited:hover {
+  color: var(--g-color-text-link-visited-hover);
+}
